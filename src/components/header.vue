@@ -11,10 +11,10 @@
 				id="header-nav"
 				class="w-2/5 flex invisible nrm:visible align-center justify-between"
 			>
-				<a href="#home">Home</a>
-				<a href="#features">Features</a>
-				<a href="#testimonial">Testimonial</a>
-				<a href="#pricing">Pricing</a>
+			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#home">Home</a>
+			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#features">Features</a>
+			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#testimonial">Testimonial</a>
+			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#pricing">Pricing</a>
 			</div>
 			<div>
 				<button
@@ -69,6 +69,7 @@
 		background-color: transparent;
 		color: white;
 		transition: all 3s ease;
+		z-index: 5;
 	}
 	.headerScroll {
 		position: fixed;
@@ -91,10 +92,15 @@
 	}
 	a {
 		text-decoration: none;
+	}
+	.text_white {
 		color: white;
 	}
+	.text_black {
+		color: black !important;
+	}
 	a:active {
-		color: green;
+		color: black;
 	}
 
 	.bar1,
