@@ -1,6 +1,6 @@
 <template>
 	<main class="text-white h-1/5">
-		<div id="header" class="flex justify-between items-center w-full sm:w-4/5">
+		<nav id="header" :class="{headerScroll: scrollPosition > 1}" class="flex justify-between items-center w-full sm:w-full sm:px-32">
 			<div class="flex justify-center items-center">
 				<img
 					class="inline logo"
@@ -18,7 +18,8 @@
 			</div>
 			<div>
 				<button
-					class="get_started text-white px-2 sm:px-8 py-3 border-white border-2 rounded-full"
+					:class="{get_started_dark: scrollPosition > 1}"
+					class="get_started px-2 sm:px-8 py-3 border-2 rounded-full"
 				>
 					Get Started
 				</button>
@@ -28,7 +29,7 @@
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
-		</div>
+		</nav>
 	</main>
 </template>
 
@@ -39,6 +40,7 @@
 		data() {
 			return {
 				darkmode: true,
+				scrollPosition: null,
 			};
 		},
 		computed: {
@@ -50,13 +52,38 @@
 			toggle() {
 				mutations.toggleNav();
 			},
+			updateScroll() {
+				this.scrollPosition = window.scrollY;
+			},
+		},
+		mounted() {
+			window.addEventListener("scroll", this.updateScroll);
 		},
 	};
 </script>
 
 <style>
 	#header {
+		position: fixed;
 		height: 10vh;
+		background-color: transparent;
+		color: white;
+		transition: all 3s ease;
+	}
+	.headerScroll {
+		position: fixed;
+		top: 0;
+		height: 10vh;
+		color: black;
+		background: white !important;
+	}
+	.get_started {
+		color: white;
+		border: 1px solid #fff;
+	}
+	.get_started_dark {
+		color: black;
+		border: 1px solid #000;
 	}
 	.container {
 		display: inline-block;
@@ -66,7 +93,7 @@
 		text-decoration: none;
 		color: white;
 	}
-	a:active{
+	a:active {
 		color: green;
 	}
 

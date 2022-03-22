@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "jquery": "^3.6.0",
     "slither-slider": "^2.11.0",
     "vue": "^2.6.14",
     "vue-star-rating": "^1.7.0"

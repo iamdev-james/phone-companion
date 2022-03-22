@@ -19,10 +19,10 @@
 		</Sidebar>
 		<section id="main" class="w-screen">
 			<div id="app" class="text-white flex items-center justify-center">
-				<div id="home" class="mb-4 md:mb-32 w-full sm:w-4/5">
+				<div id="home" class="mb-4 md:mb-32 w-full">
 					<Header id="header" />
 					<div
-						class="mt-10 px-8 sm:px-0 h-screen md:flex flex-row justify-end items-center"
+						class="mt-10 px-8 sm:px-32 h-screen md:flex flex-row justify-end items-center"
 					>
 						<div
 							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
@@ -422,10 +422,6 @@
 </script>
 
 <style>
-	#header {
-		position: fixed;
-		top: 0;
-	}
 	#container {
 		font-family: "DM Sans", sans-serif;
 	}
