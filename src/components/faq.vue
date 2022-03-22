@@ -6,7 +6,7 @@
 		</div>
 		<div>
 			<div :class="{ current_faq: !box_1 }" class="mb-6 px-8 sm:px-16 faq-box">
-				<div @click="toggleFaq('box_1')" class="relative mb-12">
+				<div @click="box_1 = false, box_2 = true, box_3 = true, box_4 = true" class="relative mb-12">
 					<img
 						v-show="box_1"
 						:src="require('@/assets/images/open.svg')"
@@ -29,7 +29,7 @@
 			</div>
 			<hr />
 			<div :class="{ current_faq: !box_2 }" class="mb-6 px-16 faq-box">
-				<div @click="toggleFaq('box_2')" class="relative mb-12">
+				<div @click="box_1 = true, box_2 = false, box_3 = true, box_4 = true" class="relative mb-12">
 					<img
 						v-show="box_2"
 						:src="require('@/assets/images/open.svg')"
@@ -52,7 +52,7 @@
 			</div>
 			<hr />
 			<div :class="{ current_faq: !box_3 }" class="mb-6 px-16 faq-box">
-				<div @click="toggleFaq('box_3')" class="relative mb-12">
+				<div @click="box_1 = true, box_2 = true, box_3 = false, box_4 = true" class="relative mb-12">
 					<img
 						v-show="box_3"
 						:src="require('@/assets/images/open.svg')"
@@ -75,7 +75,7 @@
 			</div>
 			<hr />
 			<div :class="{ current_faq: !box_4 }" class="mb-6 px-16 faq-box">
-				<div @click="toggleFaq('box_4')" class="relative mb-12">
+				<div @click="box_1 = true, box_2 = true, box_3 = true, box_4 = false" class="relative mb-12">
 					<img
 						v-show="box_4"
 						:src="require('@/assets/images/open.svg')"
