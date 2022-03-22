@@ -11,10 +11,10 @@
 				<li><a href="#pricing">Pricing</a></li>
 			</ul>
 			<div class="mt-32 ml-16 opacity-50">
-				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
-				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
-				<a href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
-				<a href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+				<a v-smooth-scroll href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
+				<a v-smooth-scroll href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
+				<a v-smooth-scroll href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
+				<a v-smooth-scroll href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
 			</div>
 		</Sidebar>
 		<section id="main" class="w-screen">

@@ -11,10 +11,10 @@
 				id="header-nav"
 				class="w-2/5 flex invisible nrm:visible align-center justify-between"
 			>
-			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#home">Home</a>
-			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#features">Features</a>
-			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#testimonial">Testimonial</a>
-			<a :class="{text_black: scrollPosition > 1}" class="text_white" href="#pricing">Pricing</a>
+			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#home">Home</a>
+			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#features">Features</a>
+			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#testimonial">Testimonial</a>
+			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#pricing">Pricing</a>
 			</div>
 			<div>
 				<button
