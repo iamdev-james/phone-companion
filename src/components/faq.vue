@@ -17,7 +17,7 @@
 						:src="require('@/assets/images/close.svg')"
 						class="absolute"
 					/>
-					<p class="ml-12 text-xl text-grey-darkest font-semibold">How to contact with riders emergency ?</p>
+					<p class="ml-12 text-lg sm:text-xl text-grey-darkest font-semibold">How to contact with riders emergency ?</p>
 				</div>
 				<span
 					><p class="text-grey-darkest leading-loose ml-12">
@@ -28,7 +28,7 @@
 				>
 			</div>
 			<hr />
-			<div :class="{ current_faq: !box_2 }" class="mb-6 px-16 faq-box">
+			<div :class="{ current_faq: !box_2 }" class="mb-6 px-8 sm:px-16 faq-box">
 				<div @click="box_1 = true, box_2 = false, box_3 = true, box_4 = true" class="relative mb-12">
 					<img
 						v-show="box_2"
@@ -40,7 +40,7 @@
 						:src="require('@/assets/images/close.svg')"
 						class="absolute"
 					/>
-					<p class="ml-12 text-xl text-grey-darkest font-semibold">App installation failed, how to update system information?</p>
+					<p class="ml-12 text-lg sm:text-xl text-grey-darkest font-semibold">App installation failed, how to update system information?</p>
 				</div>
 				<span
 					><p class="text-grey-darkest leading-loose ml-12">
@@ -49,7 +49,7 @@
 				>
 			</div>
 			<hr />
-			<div :class="{ current_faq: !box_3 }" class="mb-6 px-16 faq-box">
+			<div :class="{ current_faq: !box_3 }" class="mb-6 px-8 sm:px-16 faq-box">
 				<div @click="box_1 = true, box_2 = true, box_3 = false, box_4 = true" class="relative mb-12">
 					<img
 						v-show="box_3"
@@ -61,7 +61,7 @@
 						:src="require('@/assets/images/close.svg')"
 						class="absolute"
 					/>
-					<p class="ml-12 text-xl text-grey-darkest font-semibold">Website response taking time, how to improve?</p>
+					<p class="ml-12 text-lg sm:text-xl text-grey-darkest font-semibold">Website response taking time, how to improve?</p>
 				</div>
 				<span
 					><p class="text-grey-darkest leading-loose ml-12">
@@ -70,7 +70,7 @@
 				>
 			</div>
 			<hr />
-			<div :class="{ current_faq: !box_4 }" class="mb-6 px-16 faq-box">
+			<div :class="{ current_faq: !box_4 }" class="mb-6 px-8 sm:px-16 faq-box">
 				<div @click="box_1 = true, box_2 = true, box_3 = true, box_4 = false" class="relative mb-12">
 					<img
 						v-show="box_4"
@@ -82,7 +82,7 @@
 						:src="require('@/assets/images/close.svg')"
 						class="absolute"
 					/>
-					<p class="ml-12 text-xl text-grey-darkest font-semibold">New update fixed all bug and issues</p>
+					<p class="ml-12 text-lg sm:text-xl text-grey-darkest font-semibold">New update fixed all bug and issues</p>
 				</div>
 				<span
 					><p class="text-grey-darkest leading-loose ml-12">
@@ -128,5 +128,10 @@
 	.current_faq {
 		height: auto !important;
 		transition: height 4s ease;
+	}
+	@media screen and (max-width: 576px) {
+		.faq-box {
+			height: 60px;
+		}
 	}
 </style>

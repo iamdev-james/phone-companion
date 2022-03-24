@@ -1,5 +1,5 @@
 <template>
-	<main class="text-white h-1/5">
+	<main class="text-white mr-10 sm:mr-0 h-1/5">
 		<nav
 			id="header"
 			:class="{ headerScroll: scrollPosition > 1 }"
@@ -48,7 +48,7 @@
 					Get Started
 				</button>
 			</div>
-			<div class="container inline xl:hidden sm:ml-4" @click="toggle()">
+			<div class="container inline xl:hidden ml-0 sm:ml-4" @click="toggle()">
 				<div :class="{ move: scrollPosition > 1, change_1: navOpen }" class="bar1"></div>
 				<div :class="{ move: scrollPosition > 1, change_2: navOpen }" class="bar2"></div>
 				<div :class="{ move: scrollPosition > 1, change_3: navOpen }" class="bar3"></div>
@@ -159,7 +159,7 @@
 	/* Rotate first bar */
 	.change_1 {
 		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-		transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-11px, 8px);
 	}
 
 	/* Fade out the second bar */
@@ -170,7 +170,7 @@
 	/* Rotate last bar */
 	.change_3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-		transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-3px, -3px);
 	}
 	@media screen and (max-width: 576px) {
 		#header-nav {
@@ -180,8 +180,11 @@
 			width: 870px;
 			margin-left: 18px;
 		}
+		.container {
+			margin-right: 20px;
+		}
 		.get_started {
-			width: 120px;
+			width: 90px;
 			font-size: 12px;
 			margin: auto 20px;
 		}

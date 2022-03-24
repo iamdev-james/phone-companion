@@ -6,15 +6,19 @@
 		<Sidebar>
 			<ul class="sidebar-panel-nav">
 				<li><a href="#home">Home</a></li>
+				<div class="line"></div>
 				<li><a href="#features">Features</a></li>
+				<div class="line"></div>
 				<li><a href="#testimonial">Testimonial</a></li>
+				<div class="line"></div>
 				<li><a href="#pricing">Pricing</a></li>
+				<div class="line"></div>
 			</ul>
 			<div class="mt-32 ml-16 opacity-50">
-				<a v-smooth-scroll href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
-				<a v-smooth-scroll href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
-				<a v-smooth-scroll href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
-				<a v-smooth-scroll href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f mr-4"></i></a>
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter mr-4"></i></a>
+				<a href="https://github.com" target="_blank"><i class="fab fa-github-alt mr-4"></i></a>
+				<a href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
 			</div>
 		</Sidebar>
 		<section id="main" class="w-screen">
@@ -49,9 +53,9 @@
 								<img :src="require('@/assets/images/watchvideo.svg')" />
 							</div>
 							<div
-								class="flex flex-col md:flex-row justify-start -mt-32 md:mt-0 items-center"
+								class="flex flex-col md:flex-row justify-start -mt-32 md:mt-0 items-start sm:items-center"
 							>
-								<span class="mr-2 xl:mr-4">Sponsored by:</span
+								<span class="mr-2 my-4 sm:my-0 xl:mr-4">Sponsored by:</span
 								><img :src="require('@/assets/images/logo.svg')" />
 							</div>
 						</div>
@@ -62,10 +66,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- Youtube video -->
-		<section class="absolute">
-			<iframe src="https://youtu.be/ZNA9rmDsYVE" title="W3Schools Free Online Web Tutorials"></iframe>
-		</section>
 		</section>
 		<!-- SECTION A -->
 		<section
@@ -522,6 +522,12 @@ $('a[href*="#"]')
 		}
 		ul.sidebar-panel-nav li a:active {
 			color: green;
+		}
+		.line {
+			width: 96%;
+			height: 0.1px;
+			opacity: 0.3;
+			background-color: #333;
 		}
 	}
 	@media screen and (max-width: 770px) {
