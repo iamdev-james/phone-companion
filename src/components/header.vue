@@ -107,9 +107,23 @@
 		color: white;
 		border: 1.5px solid #fff;
 	}
+	.get_started:hover {
+		color: blue;
+		background-color: #fff;
+		border: none;
+		font-weight: bold;
+		box-shadow: 1px 1px 4px #333;
+	}
 	.get_started_dark {
 		color: black;
 		border: 1.5px solid #000;
+	}
+	.get_started_dark:hover {
+		color: white;
+		background-color: blue;
+		border: none;
+		font-weight: bold;
+		box-shadow: 1px 1px 4px #333;
 	}
 	.container {
 		display: inline-block;
