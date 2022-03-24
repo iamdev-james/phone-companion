@@ -507,17 +507,6 @@ $('a[href*="#"]')
 			display: grid;
 			grid-template-columns: repeat(2, 500px);
 		}
-	}
-	@media screen and (max-width: 770px) {
-		.section-c {
-			display: grid;
-			grid-template-columns: repeat(2, 300px);
-		}
-	}
-	@media screen and (max-width: 576px) {
-		#main {
-			border-radius: 0px 0px 150px 0px;
-		}
 		ul.sidebar-panel-nav {
 			list-style-type: none;
 			margin-top: 80px;
@@ -533,6 +522,17 @@ $('a[href*="#"]')
 		}
 		ul.sidebar-panel-nav li a:active {
 			color: green;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		.section-c {
+			display: grid;
+			grid-template-columns: repeat(2, 300px);
+		}
+	}
+	@media screen and (max-width: 576px) {
+		#main {
+			border-radius: 0px 0px 150px 0px;
 		}
 		.section-c {
 			display: grid;
