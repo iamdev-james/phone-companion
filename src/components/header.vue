@@ -49,9 +49,9 @@
 				</button>
 			</div>
 			<div class="container inline sm:hidden" @click="toggle()">
-				<div :class="{ move: scrollPosition > 1 }" class="bar1"></div>
-				<div :class="{ move: scrollPosition > 1 }" class="bar2"></div>
-				<div :class="{ move: scrollPosition > 1 }" class="bar3"></div>
+				<div :class="{ move: scrollPosition > 1, change_1: navOpen }" class="bar1"></div>
+				<div :class="{ move: scrollPosition > 1, change_2: navOpen }" class="bar2"></div>
+				<div :class="{ move: scrollPosition > 1, change_3: navOpen }" class="bar3"></div>
 			</div>
 		</nav>
 	</main>
@@ -64,17 +64,18 @@
 		data() {
 			return {
 				darkmode: true,
-				scrollPosition: null,
+				scrollPosition: null
 			};
 		},
 		computed: {
-			isBurgerActive() {
+			navOpen() {
 				return store.isNavOpen
 			},
 		},
 		methods: {
 			toggle() {
 				mutations.toggleNav()
+				this.navOpen = true
 			},
 			updateScroll() {
 				this.scrollPosition = window.scrollY
@@ -141,18 +142,18 @@
 	}
 
 	/* Rotate first bar */
-	.change .bar1 {
+	.change_1 {
 		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 		transform: rotate(-45deg) translate(-9px, 6px);
 	}
 
 	/* Fade out the second bar */
-	.change .bar2 {
+	.change_2 {
 		opacity: 0;
 	}
 
 	/* Rotate last bar */
-	.change .bar3 {
+	.change_3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
 		transform: rotate(45deg) translate(-8px, -8px);
 	}
