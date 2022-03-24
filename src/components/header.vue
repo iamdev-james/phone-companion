@@ -1,6 +1,10 @@
 <template>
 	<main class="text-white h-1/5">
-		<nav id="header" :class="{headerScroll: scrollPosition > 1}" class="flex justify-between items-center w-full sm:w-full sm:px-32">
+		<nav
+			id="header"
+			:class="{ headerScroll: scrollPosition > 1 }"
+			class="flex justify-between items-center w-full sm:w-full sm:px-32"
+		>
 			<div class="flex justify-center items-center">
 				<img
 					class="inline logo"
@@ -11,23 +15,43 @@
 				id="header-nav"
 				class="w-2/5 flex invisible nrm:visible align-center justify-between"
 			>
-			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#home">Home</a>
-			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#features">Features</a>
-			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#testimonial">Testimonial</a>
-			<a v-smooth-scroll :class="{text_black: scrollPosition > 1}" class="text_white" href="#pricing">Pricing</a>
+				<a
+					:class="{ text_black: scrollPosition > 1 }"
+					class="text_white"
+					href="#home"
+					>Home</a
+				>
+				<a
+					:class="{ text_black: scrollPosition > 1 }"
+					class="text_white"
+					href="#features"
+					>Features</a
+				>
+				<a
+					:class="{ text_black: scrollPosition > 1 }"
+					class="text_white"
+					href="#testimonial"
+					>Testimonial</a
+				>
+				<a
+					:class="{ text_black: scrollPosition > 1 }"
+					class="text_white"
+					href="#pricing"
+					>Pricing</a
+				>
 			</div>
 			<div>
 				<button
-					:class="{get_started_dark: scrollPosition > 1}"
-					class="get_started px-2 sm:px-8 py-3 border-2 rounded-full"
+					:class="{ get_started_dark: scrollPosition > 1 }"
+					class="get_started px-0 sm:px-8 py-2 border-2 rounded-full"
 				>
 					Get Started
 				</button>
 			</div>
 			<div class="container inline sm:hidden" @click="toggle()">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
+				<div :class="{ move: scrollPosition > 1 }" class="bar1"></div>
+				<div :class="{ move: scrollPosition > 1 }" class="bar2"></div>
+				<div :class="{ move: scrollPosition > 1 }" class="bar3"></div>
 			</div>
 		</nav>
 	</main>
@@ -45,20 +69,20 @@
 		},
 		computed: {
 			isBurgerActive() {
-				return store.isNavOpen;
+				return store.isNavOpen
 			},
 		},
 		methods: {
 			toggle() {
-				mutations.toggleNav();
+				mutations.toggleNav()
 			},
 			updateScroll() {
-				this.scrollPosition = window.scrollY;
+				this.scrollPosition = window.scrollY
 			},
 		},
 		mounted() {
-			window.addEventListener("scroll", this.updateScroll);
-		},
+			window.addEventListener("scroll", this.updateScroll)
+		}
 	};
 </script>
 
@@ -106,11 +130,14 @@
 	.bar1,
 	.bar2,
 	.bar3 {
-		width: 35px;
-		height: 5px;
-		background-color: #333;
+		width: 22px;
+		height: 3px;
+		background-color: #fff;
 		margin: 6px 0;
 		transition: 0.4s;
+	}
+	.move {
+		background-color: #333;
 	}
 
 	/* Rotate first bar */
@@ -139,6 +166,7 @@
 		}
 		.get_started {
 			width: 120px;
+			font-size: 12px;
 			margin: auto 20px;
 		}
 	}
