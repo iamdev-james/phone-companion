@@ -43,7 +43,7 @@
 			<div>
 				<button
 					:class="{ get_started_dark: scrollPosition > 1 }"
-					class="get_started px-0 sm:px-8 py-2 border-2 rounded-full"
+					class="get_started px-0 sm:px-8 py-2 rounded-full"
 				>
 					Get Started
 				</button>
@@ -105,11 +105,11 @@
 	}
 	.get_started {
 		color: white;
-		border: 1px solid #fff;
+		border: 1.5px solid #fff;
 	}
 	.get_started_dark {
 		color: black;
-		border: 1px solid #000;
+		border: 1.5px solid #000;
 	}
 	.container {
 		display: inline-block;

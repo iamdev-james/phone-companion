@@ -22,7 +22,7 @@
 				<div id="home" class="mb-4 md:mb-32 w-full">
 					<Header id="header" />
 					<div
-						class="mt-10 px-8 sm:px-32 h-screen md:flex flex-row justify-end items-center"
+						class="mt-10 md:mt-24 px-8 sm:px-32 h-screen md:flex flex-row justify-end items-center"
 					>
 						<div
 							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
@@ -62,6 +62,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- Youtube video -->
+		<section class="absolute">
+			<iframe src="https://youtu.be/ZNA9rmDsYVE" title="W3Schools Free Online Web Tutorials"></iframe>
+		</section>
 		</section>
 		<!-- SECTION A -->
 		<section
