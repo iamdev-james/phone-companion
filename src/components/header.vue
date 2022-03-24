@@ -48,7 +48,7 @@
 					Get Started
 				</button>
 			</div>
-			<div class="container inline sm:hidden" @click="toggle()">
+			<div class="container inline md:hidden" @click="toggle()">
 				<div :class="{ move: scrollPosition > 1, change_1: navOpen }" class="bar1"></div>
 				<div :class="{ move: scrollPosition > 1, change_2: navOpen }" class="bar2"></div>
 				<div :class="{ move: scrollPosition > 1, change_3: navOpen }" class="bar3"></div>
