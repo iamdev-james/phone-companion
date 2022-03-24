@@ -68,7 +68,7 @@
 		height: 10vh;
 		background-color: transparent;
 		color: white;
-		transition: all 3s ease;
+		transition: all 1s ease;
 		z-index: 5;
 	}
 	.headerScroll {
