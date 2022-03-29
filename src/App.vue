@@ -1,7 +1,7 @@
 <template>
 	<main
 		id="container"
-		class="w-screen flex flex-col justify-center items-center"
+		class="flex flex-col justify-center items-center"
 	>
 		<Sidebar>
 			<ul class="sidebar-panel-nav">
@@ -21,30 +21,30 @@
 				<a href="https://dribble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
 			</div>
 		</Sidebar>
-		<section id="main" class="w-screen">
+		<section id="main" class="w-full">
 			<div id="app" class="text-white flex items-center justify-center">
 				<div id="home" class="mb-4 md:mb-32 w-full">
 					<Header id="header" />
 					<div
-						class="mt-10 md:mt-24 px-8 sm:px-32 h-screen md:flex flex-row justify-end items-center"
+						class="mt-10 md:mt-24 px-8 lg:16 xl:px-32 h-screen sm:h-full sm:flex flex-row justify-end items-start"
 					>
 						<div
-							class="h-full md:h-full w-full md:px-0 md:w-5/6 flex-auto flex flex-col justify-around"
+							class="w-full md:px-0 md:w-5/6 flex-auto flex flex-col h-70 sm:h-74 md:h-full justify-between sm:justify-around"
 						>
 							<p
-								class="text-4xl sm:text-6xl xl:text-8xl font-bold leading-tight"
+								class="text-4xl sm:text-6xl py-16 xl:text-8xl font-bold leading-tight"
 							>
 								Experience your ultimate mobile application
 							</p>
 							<p
-								class="leading-loose -mt-32 md:-mt-8 text-core md:text-lg font-medium"
+								class="leading-loose -mt-32 pb-10 md:-mt-8 text-core md:text-lg font-medium"
 							>
 								Get your blood tests delivered at let home collect sample from
 								the victory of the managements that supplies best design system
 								guidelines ever.
 							</p>
 							<div
-								class="w-full md:w-auto -mt-32 md:mt-0 flex flex-row justify-start items-center"
+								class="w-full md:w-auto pb-16 -mt-32 md:mt-0 flex flex-row justify-start items-center"
 							>
 								<span
 									class="px-6 md:px-10 text-core md:text-lg mr-4 py-2 md:py-4 bg-white rounded-full text-black"
@@ -53,15 +53,15 @@
 								<img :src="require('@/assets/images/watchvideo.svg')" />
 							</div>
 							<div
-								class="flex flex-col md:flex-row justify-start -mt-32 md:mt-0 items-start sm:items-center"
+								class="flex flex-col md:flex-row justify-start -mt-32 md:mt-0 items-start md:items-center"
 							>
-								<span class="mr-2 my-4 sm:my-0 xl:mr-4">Sponsored by:</span
+								<span class="mr-2 my-4 md:my-0 xl:mr-4">Sponsored by:</span
 								><img :src="require('@/assets/images/logo.svg')" />
 							</div>
 						</div>
 						<img
 							:src="require('@/assets/images/headershowcase.png')"
-							class="showcase-img invisible md:visible"
+							class="showcase-img invisible sm:visible"
 						/>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 		</section>
 		<!-- SECTION A -->
 		<section
-			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-32"
+			class="flex flex-col justify-around items-center h-quarter w-5/6 mt-30"
 		>
 			<div class="text-center">
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
@@ -113,7 +113,7 @@
 			</div>
 		</section>
 		<!-- SECTION B -->
-		<section id="features" class="mt-32 flex flex-col justify-center items-center flex-wrap">
+		<section id="features" class="mt-30 flex flex-col justify-center items-center flex-wrap">
 			<div
 				class="flex flex-col-reverse md:flex-row justify-center items-start w-2/3"
 			>
@@ -153,7 +153,7 @@
 		</section>
 		<!-- Section C -->
 		<section
-			class="flex flex-col justify-around items-center flex-wrap h-quarter w-5/6 mt-32"
+			class="flex flex-col justify-around items-center flex-wrap h-quarter w-5/6 mt-30"
 		>
 			<div class="text-center">
 				<p class="text-lg tracking-wider text-blue-darker font-semibold mb-5">
@@ -257,7 +257,7 @@
 			</div>
 		</section>
 		<!-- Section-E -->
-		<section class="mt-24 flex flex-col justify-center items-center flex-wrap">
+		<section class="mt-30 flex flex-col justify-center items-center flex-wrap">
 			<div
 				class="flex flex-col md:flex-row justify-center items-center px-4 md:px-24 md:px-0 w-full md:w-5/6"
 			>
@@ -289,7 +289,7 @@
 			</div>
 		</section>
 		<!-- SECTION F -->
-		<section id="Sec-F" class="w-screen mt-32">
+		<section id="Sec-F" class="w-full mt-30">
 			<div
 				id="Sec-F-main"
 				class="bg-contain bg-center text-white flex items-center justify-center"
@@ -384,19 +384,19 @@
 				</div>
 			</div>
 		</section>
-		<section id="testimonial" class="h-screen flex flex-col justify-center items-center">
+		<section id="testimonial" class="h-full flex flex-col justify-center items-center mt-30">
 			<Testimonial />
 		</section>
-		<section id="pricing" class="h-auto flex justify-end items-center mt-32">
+		<section id="pricing" class="h-auto flex justify-end items-center mt-30">
 			<Pricing />
 		</section>
 		<section id="Sec-F" class="flex justify-end items-center">
 			<Payment />
 		</section>
-		<section class="flex justify-center items-center mt-16">
+		<section class="flex justify-center items-center mt-30">
 			<FAQ />
 		</section>
-		<section class="w-screen flex justify-center items-center mt-16 mb-20">
+		<section class="w-full flex justify-center items-center mt-30 mb-20">
 			<Footer />
 		</section>
 	</main>
@@ -467,20 +467,22 @@ $('a[href*="#"]')
 <style>
 	#container {
 		font-family: "DM Sans", sans-serif;
+		max-width: 1440px;
 	}
 	#main {
 		background: linear-gradient(105.18deg, #1e3c72 -2.04%, #2a5298 107.42%);
 		border-radius: 0px 0px 300px 0px;
+		max-height: 1200px;
 	}
 	#app {
-		width: 100vw;
+		width: 100%;
 		background-image: url("@/assets/images/pattern.svg");
 	}
 	.showcase-img {
 		flex: 1;
 		margin-right: -20%;
 		margin-left: -16%;
-		height: 95vh;
+		height: 95%;
 		width: 85%;
 		margin-top: 5%;
 	}
@@ -530,7 +532,24 @@ $('a[href*="#"]')
 			background-color: #333;
 		}
 	}
+	@media screen and (max-width: 1024px) {
+		.showcase-img {
+			margin-top: 8%;
+			height: 90%;
+		}
+		.section-c {
+			grid-template-columns: repeat(2, 420px);
+		}
+	}
 	@media screen and (max-width: 770px) {
+		#main {
+		max-height: 800px;
+		}
+		.showcase-img {
+			margin-top: 20%;
+			height: 85%;
+			width: 85%;
+		}
 		.section-c {
 			display: grid;
 			grid-template-columns: repeat(2, 300px);

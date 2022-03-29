@@ -159,7 +159,7 @@
 		created () {
 			if (this.windowWidth < 576) {
 				this.options.numberOfSlides = 1
-			} else if (this.windowWidth < 768) {
+			} else if (this.windowWidth < 770) {
 				this.options.numberOfSlides = 2
 			}
 		},

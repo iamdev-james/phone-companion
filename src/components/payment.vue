@@ -1,7 +1,7 @@
 <template>
 	<div
 		id="Sec-F-main"
-		class="bg-cover flex flex-col justify-center items-center bg-center w-screen h-auto"
+		class="bg-cover flex flex-col justify-center items-center bg-center w-full h-auto"
 	>
 		<div class="text-center text-white py-20">
 			<p class="text-lg">WHATS THE FUNCTION</p>

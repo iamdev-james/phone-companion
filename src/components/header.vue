@@ -3,7 +3,7 @@
 		<nav
 			id="header"
 			:class="{ headerScroll: scrollPosition > 1 }"
-			class="flex justify-between items-center w-full sm:w-full sm:px-32"
+			class="flex justify-between items-center w-full sm:w-full px-2 sm:px-8 lg:16 xl:px-32"
 		>
 			<div class="flex justify-center items-center">
 				<img
@@ -48,7 +48,7 @@
 					Get Started
 				</button>
 			</div>
-			<div class="container inline xl:hidden ml-0 sm:ml-4" @click="toggle()">
+			<div class="container inline nrm:hidden ml-0 sm:ml-4" @click="toggle()">
 				<div :class="{ move: scrollPosition > 1, change_1: navOpen }" class="bar1"></div>
 				<div :class="{ move: scrollPosition > 1, change_2: navOpen }" class="bar2"></div>
 				<div :class="{ move: scrollPosition > 1, change_3: navOpen }" class="bar3"></div>
@@ -90,7 +90,7 @@
 <style>
 	#header {
 		position: fixed;
-		height: 10vh;
+		height: 10%;
 		background-color: transparent;
 		color: white;
 		transition: all 1s ease;
