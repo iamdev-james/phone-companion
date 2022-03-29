@@ -18,7 +18,7 @@
 					text-align: left;
 					margin: 28px 5px 30px;
 				"
-				class="shadow-lg h-full text-black-lightest"
+				class="shadow-lg h-semi text-black-lightest"
 				v-for="(user, index) in testimonial"
 				:key="index"
 			>
@@ -49,6 +49,10 @@
 				</div>
 			</div>
 		</slither-slider>
+		<div>
+			<i class="fas fa-arrow-left mr-4"></i>
+			<i class="fas fa-arrow-right"></i>
+		</div>
 	</div>
 </template>
 
@@ -65,8 +69,9 @@
 					autoplay: true,
 					numberOfSlides: 3,
 					secondsOnSlide: 5,
-					controls: true,
+					controls: false,
 					dots: false,
+					slidePosition: "center",
 					adaptiveHeight: true,
 					animationDuration: "500",
 					overflowHiddenPadding: { top: 0, left: 20, right: 20, bottom: 20 },
